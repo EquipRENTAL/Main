@@ -1,0 +1,128 @@
+#inquire-btn {
+    /* color: */
+    float: right;
+}
+#view-btn {
+    /* color: */
+    /* float: right; */
+    /* display:flex; */
+}
+#buyer-item-modal {
+    /* padding-top: 1rem; */
+    padding-right: 2rem;
+    padding-left: 2rem;
+    /* padding-bottom: 1rem; */
+    border: 2px green solid;
+}
+#exampleModalLongTitle {
+    /* text-align: center; */
+    border: 2px green solid;
+    justify-content: center;
+}
+#review-modal-title {
+    
+}
+#confirm-btn { 
+    /* color: */
+    float: left;
+}
+#interact-box{
+    border: 2px green solid;
+    /* float: */
+}
+.checked {
+    color: orange;
+}
+#bonfireIcon {
+    font-size: 18px;
+}
+/* #bonfireIcon {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+} */
+.rating > span:hover:before {
+    content: "\2605";
+    position: absolute;
+    color: black;
+ }
+ .rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    color:black
+  }
+  .rating > span:hover:before,
+  .rating > span:hover ~ span:before {
+     content: "\2605";
+     position: absolute;
+     color:gold;
+  }
+/* .col-6 {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+} */
+/* #bonfireIcon ion-icon {
+    display: inline-block;
+    position: relative;
+} */
+/* .col-6 ion-icon {
+    display: inline-block;
+    position: relative;
+} */
+/* #bonfireIcon:hover {
+    content: "/2605";
+    position: absolute;
+} */
+/* #bonfireIcon:hover:before {
+    content: "/2605";
+    position: absolute;
+} */
+/* #bonfireIcon:hover {
+    color:orange;
+    background-color: red;
+    position: relative;
+} */
+/* #bonfireIcon:hover */
+/* #bonfireIcon:hover ~ #bonfireIcon:before */
+ /* {
+    color:orange;
+    background-color: red;
+    position: relative;
+}; */
+/* This is correct code  */
+/*
+.col-6 #bonfireIcon:hover
+/* .col-6 #bonfireIcon:hover ~ #bonfireIcon:before */
+ /* {
+    color:orange;
+    background-color: red;
+    position: relative;
+}; */
+  /* .col-6 > span:hover:before,
+  .col-6 > span:hover ~ span::before {
+     content: "\2605";
+     position: absolute;
+  } */
+/* #bonfireIcon1 {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+#bonfireIcon1 .tooltiptext {
+    visibility: visible;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+   
+    position: absolute;
+    z-index: 1;
+}
+#bonfireIcon1:hover .tooltiptext {
+    visibility: visible;
+} */
+/* ion-icon:hover {
+        color:red;
+        background-color: orange;
+    } */

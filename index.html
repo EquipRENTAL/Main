@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html lang = "en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>Categories</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <h1> categories </h1>
+            </div>
+
+            <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="">Find</span>
+                    </div>
+
+                    <div>
+                        <input type="text" class="form-control">
+                    </div>
+                
+                    <!-- add in the ability to look at the categories when clicking on the search bar-->
+
+                    <div> 
+                        <body onload="initialize()">
+                            <div id="locationField">
+                                <!--<span class="input-group-text" id="autocomplete" type="text" placeholder="Enter a location">Near</span> -->
+                                <input id="autocomplete" class="controls" type="text"  placeholder="Enter a location"> 
+                            </div> 
+                            <div id="map"></div>
+                        <script src='google-map.js'></script>
+                        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA16l5HP5G1MyIsuiQ0BEl_xaQHcPYrRIY&libraries=places"></script>
+                        </body>
+
+                    </div>
+
+                
+                <!-- <div>
+                    <input type="text" class="form-control">
+                </div> -->
+                
+                    <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button">Search!</button>
+                    </div>
+
+            </div>
+            </br>
+                
+           
+            <div>
+                <div>
+                    <h2> Camping </h2>
+                </div>
+                
+                <div>
+                     <img src="./Images/camping.jpeg" alt="camping" class="images"/>
+                     <ul>
+                         <p> Item 1 </p>
+                         <a href="" target="_blank">browse</a>
+                     </ul>
+                  
+                </div>
+
+                <div>
+                    <h2> Sporting Goods </h2>
+                </div>
+                    
+                <div>
+                     <img src="./Images/sporting.jpeg" alt="sporting" class="images"/><br/>
+                </div>
+
+                
+                <div>
+                    <h2> Water Sports and Hobbies </h2>
+                 </div>
+                        
+                <div>
+                     <img src="./Images/water.jpeg" alt="water" class="images"/><br/>
+                </div>
+
+                    
+                <div>
+                    <h2> Tools </h2>
+                </div>
+                            
+                <div>
+                     <img src="./Images/Tools.jpeg" alt="tools" class="images"/><br/>
+                </div>
+
+            </div> 
+            
+        </div>
+    </body>
+
+
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</html>

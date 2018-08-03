@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch');
+body {
+margin: 0;
+}
+
+/*  Core */
+
+*,
+:after,
+:before {
+   box-sizing: border-box;
+}
+
+html {
+   font-family: 'Neucha', cursive;;
+   color: var(--dark);
+}
+
+body {
+   background-color: white;
+   line-height: 1.4;
+}
+
+h1 {
+   font-size: 3rem;
+}
+
+pSum {
+   font-size: 1rem
+}
+
+img {
+   width: 380px;
+   height: 380px;
+   border-radius: 5px;
+   margin-bottom: 20px;
+   margin-right: 20px;
+}
+
+section {
+   padding: 1rem;
+}
+
+/* General Classes */
+
+.intro {
+   color: white;
+   font-family: 'Cabin Sketch', cursive;
+}
+
+.section-1 {
+   font-family: 'Cabin Sketch', cursive;
+   background-color: white;
+   color: black;
+   text-align: center;
+}
+
+/* Intro Section */
+
+.intro {
+   height: 80vh;
+   padding: 0;
+}
+
+/* Media Queries */
+
+@media (min-width: 600px) {
+   .intro {
+       display: grid;
+       grid-template-areas:
+       'info-section links-section'
+       'info-section headline';
+   }
+
+   .section-1 {
+       padding: 4rem;
+   }
+
+   .intro-section p {
+       padding: 2rem;
+       font-size: 1.7rem;
+   }
+}
+
+/* Text Box */
+
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
+
+ div.transbox {
+   margin: 20px;
+   background-color: rgb(68, 35, 15);
+   border-radius: 20px;
+   opacity: 0.8;
+   width: 25%;
+   filter: alpha(opacity=100);
+   float: right;
+ }
+ 
+ div.transbox p {
+   margin: 10%;
+   text-align: center;
+   font-weight: bold;
+   color: white;
+   font-size: 1.5rem;
+   font-family: 'Special Elite', cursive;
+ }
+
+ div.transbox2 {
+   margin: 50px;
+   background-color: black;
+   border: 1px;
+   border-radius: 10px;
+   opacity: 0.6;
+   width: 50%;
+   float: left;
+   filter: alpha(opacity=40);
+ }
+ 
+ div.transbox2 p {
+   margin: 7%;
+   text-align: center;
+   font-weight: bold;
+   color: gold;
+   font-size: 1.25rem;
+   font-family: 'Special Elite', cursive;
+ }

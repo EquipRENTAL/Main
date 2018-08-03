@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+body {
+   margin: 0;
+}
+
+h4 {
+   font-size: 1rem;
+}
+
+p {
+   font-size: 1.5rem
+}
+
+/* Footer Section */
+
+footer {
+display: grid;
+height: 5px;
+align-items: center;
+text-align: center;
+color: black;
+background-color: white;
+font-family: 'Ubuntu', sans-serif;
+text-transform: uppercase;
+text-align: center;
+text-decoration: none;
+}
+
+.footer-wrapper {
+   min-height: 0%;
+   position: relative;
+   height: 5px;
+}

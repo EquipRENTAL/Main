@@ -1,0 +1,31 @@
+.images {
+    height: 600px;
+    width: 900px;
+    
+}
+
+/* .description {
+    float: left;
+} */
+
+h1 {
+    font-family: 'Julius Sans One', sans-serif;
+    padding: 1em;
+}
+
+h2 {
+    color: black;
+    font-family: 'Shadows Into Light', cursive;
+    padding: 1em;
+    
+}
+
+.info-section h1 {
+   color: #ddd;
+   font-size: 50px;
+   font-style: bold;
+   font-family: 'Cabin Sketch', cursive;
+   /* background-color: ; */
+   display: inline;
+}
+
