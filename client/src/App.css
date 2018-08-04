@@ -1,24 +1,29 @@
-.images {
-    height: 600px;
-    width: 900px;
-    
-}
-
-/* .description {
-    float: left;
-} */
-
 h1 {
-    font-family: 'Julius Sans One', sans-serif;
+    font-family: 'Special Elite', cursive;
+    text-align: center;
+    color: white;
     padding: 1em;
+    font-size: 5vh;
 }
 
 h2 {
-    color: black;
-    font-family: 'Shadows Into Light', cursive;
-    padding: 1em;
-    
+    color: white;
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 3em;
+    position: top;
+    text-align: center;
+    vertical-align: text-top;
+    line-height: 90px;  
+    padding: 1em; 
 }
+
+h3 {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 2em;
+    color: black;
+    text-align: center;
+    vertical-align: text-top;
+ }
 
 .info-section h1 {
    color: #ddd;
