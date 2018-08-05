@@ -8,6 +8,7 @@ import Tent from "./pages/Tent"
 import Account from "./pages/Account"
 import Post from "./pages/Post"
 import Login from "./pages/Login"
+import Page from "./pages/Page"
 import './App.css';
 
 
@@ -51,6 +52,7 @@ class App extends Component {
                         <Route exact path="/post" component={Post} />
                         <Route exact path="/about" component={About} /> 
                         <Route exact path="/login" component={Login} /> 
+                        <Route exact path="/page" component={Page} /> 
                         <Route exact path="/" component={Home} /> 
     
     

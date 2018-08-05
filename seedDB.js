@@ -9,14 +9,15 @@ mongoose.connect(
   );
 
 const items = [
-    {user: "Jessica Son", role: "Renter", category: "Camping", item: "Tent", description: "My tent is available!"},
-    {user: "Michael", role: "renter", category: "Camping", item: "tent", description: "This is my favorite tent"}
-]
+    (user: "Michael", category: "camping", title: "Tent", description: "My tent is cool", image: "https://www.rei.com/media/6532c9d2-83c6-44a4-a5f3-5d3e066aae00?size=1020x510")
+
+  ]
 
 db.items.insertMany([
-  {user: "Jessica Son", role: "Renter", category: "Camping", item: "Tent", description: "My tent is available!"},
-  {user: "Michael", role: "renter", category: "Camping", item: "tent", description: "This is my favorite tent"}
+  {user: "Michael", category: "camping", title: "Tent", description: "My tent is cool", image: "https://www.rei.com/media/6532c9d2-83c6-44a4-a5f3-5d3e066aae00?size=1020x510"}
 ])
+
+db.items.remove( {"_id": ObjectId("5b612b721830a1bea5505ee1")});
 
 db.items
  .remove({})

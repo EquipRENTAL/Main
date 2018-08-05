@@ -10,7 +10,7 @@ import API from "../utils/API";
 
 class Categories extends Component {
     state = {
-
+        items: []
     };
 
     componentDidMount() {
@@ -48,11 +48,11 @@ class Categories extends Component {
 
                     
                  <div>
-                        <a href="/camping"><h2> Camping </h2> </a>
+                        <a href="/page"><h2> Camping </h2> </a>
                     </div>
                     <div>
                         <div>
-                            <a href="/camping"><img src={camping} alt="camping" className="images" /> </a>
+                            <a href="/page"><img src={camping} alt="camping" className="images" /> </a>
 
                         </div>
 
@@ -61,29 +61,29 @@ class Categories extends Component {
 
 
                     <div>
-                        <a href="/sporting"><h2> Sporting Goods </h2> </a>
+                        <a href="/page"><h2> Sporting Goods </h2> </a>
                     </div>
                     <div>
 
-                        <a href="/sporting"><img src={sporting} alt="sporting" className="images" /> </a>
+                        <a href="/page"><img src={sporting} alt="sporting" className="images" /> </a>
 
                     </div>
 
 
 
                     <div>
-                        <a href="/water"><h2> Nautical </h2> </a>
+                        <a href="/page"><h2> Nautical </h2> </a>
                     </div>
                     <div>
-                        <a href="/water"><img src={water} alt="water" className="images" /> </a>
+                        <a href="/page"><img src={water} alt="water" className="images" /> </a>
 
                     </div>
 
                     <div>
-                        <a href="/tools"><h2> Tools </h2> </a>
+                        <a href="/page"><h2> Tools </h2> </a>
                     </div>
                     <div>
-                        <a href="/tools"><img src={tools} alt="tools" className="images" /> </a>
+                        <a href="/page"><img src={tools} alt="tools" className="images" /> </a>
                     </div>
 
                 </div>
