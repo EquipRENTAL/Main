@@ -13,7 +13,6 @@ class Page extends Component {
     };
 
     componentDidMount() {
-        console.log("Will Mount")
         this.loadItems()
     };
 
@@ -23,27 +22,12 @@ class Page extends Component {
             .then(res =>
                 this.setState({ items: res.data })
             )
-            .catch(err => console.log(err));
+            .catch(err => console.log("this is an err", err));
     };
 
-    imgFunction() {
-        if (this.state.items === null) {
-            // Render loading UI...
-            console.log("data is not ready!")
-            return(
-                <p>data not ready!</p>
-            );
-            this.loadItems();
-        } else {
-            console.log(this.state.items[0])
-            return(<img src= {this.state.items["image"]} />)
-        }
-    }
-
-
     render() {
-        console.log("Categories state", this.state.items)
-        console.log(this.state.items[0])
+        console.log("this is items[0]", this.state.items[0])
+      
         return (
 
     
@@ -52,15 +36,10 @@ class Page extends Component {
 
         <div className="container">
             <h1> Camping </h1>
-
-            {/* <Card name="" /> */}
-
-         
-            
-            {/* <p>{JSON.stringify(this.state.items[0])}</p> */}
-            {this.imgFunction()}
-        
-
+            <div>
+                <Card data={this.state.items} />
+            </div>
+    
         </div>
     </div>
 

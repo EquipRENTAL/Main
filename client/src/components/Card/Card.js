@@ -1,22 +1,25 @@
 import React from "react";
 import "./Card.css"
 import { Link } from "react-router-dom";
+import Cardtemplate from "../Cardtemplate/Cardtemplate";
 
 const Card = props => {
 
-<div>
+    const results = props.data;
+    let itemMap = results.map(item =>
+        <Cardtemplate url={item.image} title={item.title} user={item.user} description={item.description} />
 
-<p> This is a card </p>
+    );
 
+    return ([
+        <div>
+            <ul className="gif-list">
+                {itemMap}
+            </ul>
+        </div>
 
-
-<img href= {props.name} />
-
-{/* <p> {this.state.items[0].user} </p> */}
-
-
-</div>}
-
+    ]);
+}
 
 export default Card;
 
