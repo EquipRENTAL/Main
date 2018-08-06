@@ -9,6 +9,7 @@ import Account from "./pages/Account"
 import Post from "./pages/Post"
 import Login from "./pages/Login"
 import './App.css';
+import Chat from "./components/Chat/Chat"
 
 
 class App extends Component {
@@ -52,6 +53,9 @@ class App extends Component {
                         <Route exact path="/about" component={About} /> 
                         <Route exact path="/login" component={Login} /> 
                         <Route exact path="/" component={Home} /> 
+                        
+                        <Route exact path="/Chat"
+                        component={Chat} />
     
     
     
