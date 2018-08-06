@@ -3,31 +3,6 @@ import { Link } from "react-router-dom";
 import "./Navbar.css"
 
 const Navbar = props =>
-    // <div>
-    //     <nav class="navbar navbar-dark bg-success">
-    //         <div className="1">
-    //             <a href="/about" className="navLinks"><p>About Us</p></a>
-    //         </div>
-    //         <div className="2">
-    //             <a href="/categories" className="navLinks"><p>Browse</p></a>
-    //         </div>
-    //         <div class="info-section">
-    //             <a href="/"><h1 className="logo">EquipRENT</h1></a>
-    //         </div>
-    //         <div className="3">
-    //             <a href="/post" className="navLinks"><p>Post</p></a>
-    //         </div>
-    //         <div className="4">
-    //             <a href="/login" className="navLinks"><p>Login/Create User</p></a>
-    //         </div>
-    //         <div className="4">
-    //             <a href="/account" className="navLinks"><p>My account</p></a>
-    //         </div>
-
-    //     </nav>
-
-
-
    <div>
             <nav className="navbar navbar-dark bg-success">
                 <div className="info-section">
