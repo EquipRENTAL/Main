@@ -63,7 +63,7 @@ class Categories extends Component {
                        strength={200}
                        >        
                         <div>
-                        <a href="/sporting" style={{ textDecoration: 'none' }}><h2> Sporting Goods </h2> </a>
+                        <a href="/sporting" style={{ textDecoration: 'none' }}><h2> Outdoor Sporting Goods </h2> </a>
                         </div>              
                        <div style={{ height: '550px' }} />
                      </Parallax>

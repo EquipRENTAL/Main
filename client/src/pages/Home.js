@@ -24,6 +24,12 @@ const Home = props =>
                            </div>                  
                        <div style={{ height: '650px' }} />
                    </Parallax>
+
+                        <div>
+                        <h3>EquipRENT is a community where users can find EQUIPMENT they need but do not necessarily want to buy.
+                         <br />Users can also post the availability and rates for equipment that they own that other users can RENT.
+                        </h3>
+                        </div>
                    <Summary />
                    <Parallax
                        blur={{ min: -10, max: 7 }}
@@ -37,7 +43,7 @@ const Home = props =>
                            <br />post items that you want to rent out!
                             </h1>
                            </div>    
-                       <div style={{ height: '175px' }} />
+                       <div style={{ height: '200px' }} />
                    </Parallax>
 
                         <div>
@@ -51,8 +57,9 @@ const Home = props =>
                        strength={500}
                        >
                            <div className="transbox3">
-                           <p>"Equiprent allowed us to use things we needed without having to buy it.
-                           <br />Very easy process overall. We had an awesome time camping at Lake Tahoe!"
+                           <p>"Equiprent allowed us to use things we needed
+                           <br />without having to buy it. Very easy process.
+                           <br />We had an awesome time camping at Lake Tahoe!"
                            <br /> -Tommy B.</p>
                            </div>
                        <div style={{ height: '650px' }} />
