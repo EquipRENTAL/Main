@@ -3,11 +3,10 @@ const Schema = mongoose.Schema;
 
 const itemSchema = new Schema({
   user: { type: String, required: true },
-  role: {type: String, required: true},
   category: {type: String, required: true },
-  item: {type: String, required: true},
+  title: {type: String, required: true},
   description: String,
-  image: String,
+  image: { type: String, required: true},
   date: { type: Date, default: Date.now }
 });
 

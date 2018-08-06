@@ -1,40 +1,50 @@
-import React from "react";
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar"
+import API from "../utils/API";
+import Card from "../components/Card/Card"
 
-const Camping = props =>
 
+
+
+class Page extends Component {
+    state = {
+        items: []
+    };
+
+    componentDidMount() {
+        this.loadItems()
+    };
+
+
+    loadItems() {
+        API.getItems()
+            .then(res =>
+                this.setState({ items: res.data })
+            )
+            .catch(err => console.log("this is an err", err));
+    };
+
+    render() {
+        console.log("this is items[0]", this.state.items[0])
+      
+        return (
+
+    
     <div>
         <Navbar />
 
-        <div class="container">
+        <div className="container">
             <h1> Camping </h1>
-
-            <h5> Browse by Categories </h5>
-            <ul> 
-                <a href="./Tent"><p>Tent</p></a>
-                <a href="./sleeping"><p>Sleeping Accessories</p></a>
-                <a href="./coolers"><p>Coolers</p></a>
-                <a href="./backpacks"><p>Backpacks</p></a>
-                <a href="./cooking"><p>Camp Cooking Equipment</p></a>
-                <a href="./heater"><p> Portable Heaters</p></a>
-            </ul> 
-
-            <h5> Browse by Users </h5>
-            <ul>
-                <p>Mockuser_1</p>
-                <p>Mockuser_2</p>
-                <p>Mockuser_3</p>
-                <p>Mockuser_4</p>
-                <p>Mockuser_5</p>
-            </ul>
-
-        
-
+            <div>
+                <Card data={this.state.items} />
+            </div>
+    
         </div>
     </div>
 
 
+        )}
+}
 
-
-export default Camping;
+export default Page;
