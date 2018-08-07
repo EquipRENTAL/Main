@@ -1,15 +1,16 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom"; 
 import Categories from "./pages/Categories";
-import About from "./pages/About"
-import Home from "./pages/Home"
-import Tent from "./pages/Tent"
+import About from "./pages/About";
+import Home from "./pages/Home";
+import Tent from "./pages/Tent";
 // import Confirmation from "./pages/Confirmation"
-import Account from "./pages/Account"
-import Post from "./pages/Post"
-import Login from "./pages/Login"
-import Page from "./pages/Page"
-import Chat from "./components/Chat/Chat"
+import Account from "./pages/Account";
+import Post from "./pages/Post";
+import Login from "./pages/Login";
+import Page from "./pages/Page";
+import Chat from "./components/Chat/Chat";
+import Signup from "./pages/Signup";
 import './App.css';
 
 
@@ -54,7 +55,8 @@ class App extends Component {
                         <Route exact path="/about" component={About} /> 
                         <Route exact path="/login" component={Login} /> 
                         <Route exact path="/page" component={Page} />
-			<Route exact path="/chat" component={Chat} />
+			            <Route exact path="/signup" component={Signup} />
+                        <Route exact path="/chat" component={Chat} />
                         <Route exact path="/" component={Home} />      
     
     
