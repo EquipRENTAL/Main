@@ -12,13 +12,12 @@ const morgan = require("morgan");
 const cookieParser = require("cookie-parser");
 const session = require("express-session");
 const socket = require('socket.io');
-const io = socket(server);
-// create an empty array to push messages into.  
-const messageLog = [];
+
 
 const PORT = process.env.PORT || 3001;
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/equiprent");
+
 require('./config/passport')(passport); // pass passport for configuration 
 // need this for Passport configuration, to connect to mongo DB
 
@@ -63,9 +62,13 @@ app.get('/TESTTHIS/', (req, res) => {
 });
 
 // Start the API server
-app.listen(PORT, function() {
+const server = app.listen(PORT, function() {
   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
 });
+
+const io = socket(server);
+// create an empty array to push messages into.  
+const messageLog = [];
 
 // initlization of socket
 io.on('connection', (socket) => {
