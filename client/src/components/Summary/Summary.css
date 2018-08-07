@@ -29,12 +29,30 @@ pSum {
    font-size: 1rem
 }
 
-img {
-   width: 380px;
-   height: 380px;
-   border-radius: 5px;
-   margin-bottom: 20px;
-   margin-right: 20px;
+#imagesMain {
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  text-align: center;
+}
+#imagesMain img {
+  height: 350px;
+  width: 350px;
+  vertical-align: middle;
+}
+
+#imagesMain2 {
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  text-align: center;
+}
+#imagesMain2 img {
+  height: 400px;
+  width: 400px;
+  vertical-align: middle;
 }
 
 section {
@@ -129,7 +147,7 @@ div.transbox2 p {
   border: 1px;
   border-radius: 10px;
   opacity: 0.6;
-  width: 50%;
+  width: 35%;
   float: left;
   filter: alpha(opacity=40);
 }
@@ -139,6 +157,6 @@ div.transbox3 p {
   text-align: center;
   font-weight: bold;
   color: gold;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   font-family: 'Special Elite', cursive;
 }

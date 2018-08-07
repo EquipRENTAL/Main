@@ -8,9 +8,6 @@ const Navbar = props =>
                 <div className="info-section">
                     <a href="/home" style={{ textDecoration: 'none' }}><h1 className="logo">EquipRENT</h1></a>
                 </div>
-                <div className="about">
-                    <a href="/about" style={{ textDecoration: 'none' }} className="navLinks"><p>About Us</p></a>
-                </div>
                 <div className="browse">
                     <a href="/categories" style={{ textDecoration: 'none' }} className="navLinks"><p>Browse</p></a>
                 </div>

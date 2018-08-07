@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Navbar from "../components/Navbar/Navbar"
 import API from "../utils/API";
 import { Parallax} from 'react-parallax';
 import Footer from "../components/Footer/Footer";
@@ -62,7 +61,7 @@ class Categories extends Component {
                        strength={200}
                        >        
                         <div>
-                        <a href="/sporting" style={{ textDecoration: 'none' }}><h2> Sporting Goods </h2> </a>
+                        <a href="/sporting" style={{ textDecoration: 'none' }}><h2> Outdoor Sporting Goods </h2> </a>
                         </div>              
                        <div style={{ height: '550px' }} />
                      </Parallax>
