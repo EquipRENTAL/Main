@@ -2,16 +2,13 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 const bcrypt = require('bcrypt-nodejs');
 
+// change userschema to include:
+// phone, username, zipcode
+
 const userSchema = new Schema({
   local: {
     email: String,
     password: String,
-  },
-  facebook: {
-    id: String,
-    token: String, 
-    name: String,
-    email: String,
   },
   google: {
     id: String,

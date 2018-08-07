@@ -1,7 +1,4 @@
 import React, { Component } from "react";
-import API from "../utils/API";
-import axios from "axios";
-// import { Link } from "react-router-dom";
 
 class Signup extends Component {
     state = {
@@ -38,7 +35,7 @@ class Signup extends Component {
                         } */}
                     
     
-                    {/* login form */}
+                    {/* SIGNUP form */}
                     <form action="http://localhost:3001/signup" method="post">
                         
                         <div className="form-group">
