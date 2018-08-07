@@ -1,13 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Navbar from "../components/Navbar/Navbar"
 import "./Post.css"
 
 const Post = props =>
     <div>
         <div class="container">
             <form>
-                <p className="post">Post your item!</p>
+                <h3>Post your item!</h3>
                 <label htmlFor="defaultFormRegisterNameEx" className="grey-text">Name your item</label>
                 <input type="text" id="defaultFormRegisterNameEx" className="form-control" />
                 <br />
