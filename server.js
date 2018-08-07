@@ -1,28 +1,62 @@
 const express = require("express");
+const app = express();
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
-const logger = require("morgan");
 const routes = require("./routes/routes");
-const cors = require('cors');
-const app = express();
+const passRoutes = require("./routes/passRoutes");
+const cors = require("cors");
+const passport = require("passport");
+// const LocalStrategy = require('passport-local').Strategy;
+const flash = require("connect-flash");
+const morgan = require("morgan");
+const cookieParser = require("cookie-parser");
+const session = require("express-session");
 const socket = require('socket.io');
+const io = socket(server);
+// create an empty array to push messages into.  
+const messageLog = [];
+
 const PORT = process.env.PORT || 3001;
+// Connect to the Mongo DB
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/equiprent");
+require('./config/passport')(passport); // pass passport for configuration 
+// need this for Passport configuration, to connect to mongo DB
 
 // Define middleware here
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+// enable cors
+app.use(cors());
+// Enable CORS from client-side
+app.use(function(req, res, next) {  
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header('Access-Control-Allow-Methods', 'PUT, GET, POST, DELETE, OPTIONS');
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization, Access-Control-Allow-Credentials");
+  res.header("Access-Control-Allow-Credentials", "true");
+  next();
+});
+
+app.use(morgan('dev')); // log requests to the console
+app.use(cookieParser()); // read cookies (needed for auth)
+app.use(session({ secret: "iloveyouhoneybear" })); // session secret? no clue it seems you can just put whatever there
+app.use(passport.initialize());
+app.use(passport.session()); // for persistent login sessions
+app.use(flash()); // use connect-flash for flash messages stored in session
+
+// Add routes
+app.use(routes);
+// app.use(passRoutes;
+// process the signup form
+app.post('/signup', passport.authenticate('local-signup', {
+  successRedirect : 'http://localhost:3000/', // redirect to the secure profile section
+  failureRedirect : 'http://localhost:3000/signup', // redirect back to the signup page if there is an error
+  failureFlash : "something went wrong" // allow flash messages
+}));
+
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
-// enable cors
-app.use(cors());
-
-// Add routes, both API and view
-app.use(routes);
-
-// Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/itemsdb");
 
 app.get('/TESTTHIS/', (req, res) => {
   res.send('hello world');
@@ -31,4 +65,16 @@ app.get('/TESTTHIS/', (req, res) => {
 // Start the API server
 app.listen(PORT, function() {
   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
+});
+
+// initlization of socket
+io.on('connection', (socket) => {
+  console.log("Inside io.on.connection - returning socket.id: ", socket.id);
+
+  socket.emit('RECEIVE_MESSAGELOG', messageLog);
+
+  socket.on('SEND_MESSAGE', function(data){
+      messageLog.push(data);
+      io.emit('RECEIVE_MESSAGE', data);
+  })
 });

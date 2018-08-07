@@ -9,6 +9,7 @@ import Account from "./pages/Account"
 import Post from "./pages/Post"
 import Login from "./pages/Login"
 import Page from "./pages/Page"
+import Chat from "./components/Chat/Chat"
 import './App.css';
 
 
@@ -52,9 +53,9 @@ class App extends Component {
                         <Route exact path="/post" component={Post} />
                         <Route exact path="/about" component={About} /> 
                         <Route exact path="/login" component={Login} /> 
-                        <Route exact path="/page" component={Page} /> 
-                        <Route exact path="/" component={Home} /> 
-                        <Route exact path="/home" component={Home} />     
+                        <Route exact path="/page" component={Page} />
+			<Route exact path="/chat" component={Chat} />
+                        <Route exact path="/" component={Home} />      
     
     
                     </div>
