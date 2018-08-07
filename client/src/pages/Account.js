@@ -1,12 +1,37 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Navbar from "../components/Navbar/Navbar"
+import React, { Component } from "react";
+/* import { Link } from "react-router-dom";
+import Navbar from "../components/Navbar/Navbar" */
 
-const Account = props =>
+class Account extends Component {
+    state = {
+        username: '',
+        email: '',
+        password: '',
+        phone: '',
+        zip: '',
+    }
 
-<div>
-    <h1> My account </h1>
+    handleInputChange = event => {
+        const { name, value } = event.target;
+        this.setState({
+            [name]: value
+        });
+    };
 
-</div>
+    render() {
+        return (
+            <div className="container">
+                <div className="col">
+                    <p className="text-center"> My account </p>
+                </div>
+
+            </div>
+        )
+    }
+}
+
+
+
+
 
 export default Account;

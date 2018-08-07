@@ -17,7 +17,10 @@ export default {
   saveItems: function(bookData) {
     return axios.post("http://localhost:3001/api/", bookData);
   },
-  loginPassport: function () {
+  getUserData: function(id) {
+    return axios.get("http://localhost:3001/api/users/" + id);
+  }
+  /* loginPassport: function () {
     console.log("this is a login function");
     // axios.post('/login');
   },
@@ -37,6 +40,6 @@ export default {
     // may not be necessary but will keep just in case.
     console.log("this is to connect other accounts");
     // axios.post('http://localhost:3001/connect/local');
-  }
+  } */
 
 };

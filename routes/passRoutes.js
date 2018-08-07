@@ -12,11 +12,11 @@ module.exports = function(app, passport) {
 
     // normal routes ===============================================================
 
-    // show the home page (will also have our login links)
+    /* // show the home page (will also have our login links)
     app.get('/', function(req, res) {
         res.render('index.ejs');
     });
-
+ */
     // PROFILE SECTION =========================
     app.get('/profile', isLoggedIn, function(req, res) {
         res.render('profile.ejs', {
@@ -44,8 +44,8 @@ module.exports = function(app, passport) {
 
         // process the login form
         app.post('/login', passport.authenticate('local-login', {
-            successRedirect : '/profile', // redirect to the secure profile section
-            failureRedirect : '/login', // redirect back to the signup page if there is an error
+            successRedirect : 'http://localhost:3000/', // redirect to the secure profile section
+            failureRedirect : 'http://localhost:3000/login', // redirect back to the signup page if there is an error
             failureFlash : true // allow flash messages
         }));
 
@@ -57,8 +57,8 @@ module.exports = function(app, passport) {
 
         // process the signup form
         app.post('/signup', passport.authenticate('local-signup', {
-            successRedirect : '/', // redirect to the secure profile section
-            failureRedirect : '/signup', // redirect back to the signup page if there is an error
+            successRedirect : 'http://localhost:3000/', // redirect to the secure profile section
+            failureRedirect : '/http://localhost:3000/signup', // redirect back to the signup page if there is an error
             failureFlash : "this did not work" // allow flash messages
         }));
 
@@ -75,7 +75,7 @@ module.exports = function(app, passport) {
                 failureFlash: "something is wrong."
             }));
 
-    // twitter --------------------------------
+    /* // twitter --------------------------------
 
         // send to twitter to do the authentication
         app.get('/auth/twitter', passport.authenticate('twitter', { scope : 'email' }));
@@ -87,7 +87,7 @@ module.exports = function(app, passport) {
                 failureRedirect : '/'
             }));
 
-
+ */
     // google ---------------------------------
 
         // send to google to do the authentication
@@ -151,7 +151,7 @@ module.exports = function(app, passport) {
                 failureRedirect : '/'
             }));
 
-// =============================================================================
+/* // =============================================================================
 // UNLINK ACCOUNTS =============================================================
 // =============================================================================
 // used to unlink accounts. for social accounts, just remove the token
@@ -193,7 +193,7 @@ module.exports = function(app, passport) {
         user.save(function(err) {
             res.redirect('/profile');
         });
-    });
+    }); */
 };
 
 // route middleware to make sure a user is logged in
@@ -201,8 +201,10 @@ function isLoggedIn(req, res, next) {
 
     // if user is authenticated in the session, carry on 
     if (req.isAuthenticated())
+        console.log("user is loggin in!");
         return next();
 
     // if they aren't redirect them to the home page
+    console.log("user is not logged in")
     res.redirect('/');
 }

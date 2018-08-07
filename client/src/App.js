@@ -14,11 +14,17 @@ import Signup from "./pages/Signup";
 import Navbar from "./components/Navbar/Navbar";
 import './App.css';
 
+// Navbar is in every component, should only be HERE
+// Navbar should link to the given routes in this file
+// When clicking a link, the page should render the component under the navbar
+// basically the same but cleaner.
+
 
 class App extends Component {
 
     state = {
         date: new Date(),
+        isLoggedin: null
     }
 
     handleSelect(date) {
@@ -39,12 +45,13 @@ class App extends Component {
         //   </div>
     
         <div>
+                <Navbar/>
                 <Router>
                     <div>
     
                         {/* <Route exact path="/:categoryName" component={Categories} /> */}
 
-                        <Navbar/>
+                        
     
                         
                         
