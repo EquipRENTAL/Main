@@ -7,7 +7,6 @@ import Items from "../components/Items/Items";
 
 const Home = props =>
                <div>
-                   <Navbar />
                    <div>
                         <p> <br/> </p>
                    </div>

@@ -31,7 +31,6 @@ class Categories extends Component {
         console.log("Categories state", this.state)
         return (
             <div>
-                <Navbar />
                 {/* <h1>CategoryName: {this.props.params.categoryName}</h1> */}
 
 

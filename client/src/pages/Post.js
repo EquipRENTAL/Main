@@ -5,7 +5,6 @@ import "./Post.css"
 
 const Post = props =>
     <div>
-        <Navbar />
         <div class="container">
             <form>
                 <p className="post">Post your item!</p>

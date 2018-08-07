@@ -5,7 +5,6 @@ import Navbar from "../components/Navbar/Navbar"
 const Tent = props =>
 
 <div> 
-    <Navbar />
     
     <h2> Tent </h2>
 

@@ -5,9 +5,6 @@ import Navbar from "../components/Navbar/Navbar"
 const About = props =>
 
 <div>
-
-    <Navbar />
-
     <h1> About Us </h1>
 
 </div>

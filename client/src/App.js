@@ -11,6 +11,7 @@ import Login from "./pages/Login";
 import Page from "./pages/Page";
 import Chat from "./components/Chat/Chat";
 import Signup from "./pages/Signup";
+import Navbar from "./components/Navbar/Navbar";
 import './App.css';
 
 
@@ -42,6 +43,8 @@ class App extends Component {
                     <div>
     
                         {/* <Route exact path="/:categoryName" component={Categories} /> */}
+
+                        <Navbar/>
     
                         
                         
@@ -55,9 +58,11 @@ class App extends Component {
                         <Route exact path="/about" component={About} /> 
                         <Route exact path="/login" component={Login} /> 
                         <Route exact path="/page" component={Page} />
-			            <Route exact path="/signup" component={Signup} />
+			            <Route exact path="/signup" component={Signup} />  
                         <Route exact path="/chat" component={Chat} />
-                        <Route exact path="/" component={Home} />      
+                        <Route exact path="/" component={Home} />  
+                          
+                           
     
     
                     </div>
