@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Navbar from "../components/Navbar/Navbar"
 import API from "../utils/API";
 import { Parallax} from 'react-parallax';
 import Footer from "../components/Footer/Footer";
@@ -31,7 +30,6 @@ class Categories extends Component {
         console.log("Categories state", this.state)
         return (
             <div>
-                <Navbar />
                 {/* <h1>CategoryName: {this.props.params.categoryName}</h1> */}
 
 

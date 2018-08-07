@@ -32,7 +32,6 @@ class Page extends Component {
 
     
     <div>
-        <Navbar />
 
         <div className="container">
             <h1> Camping </h1>

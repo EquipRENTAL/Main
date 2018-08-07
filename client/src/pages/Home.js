@@ -1,13 +1,11 @@
 import React, { Component } from "react";
 import { Parallax} from 'react-parallax';
-import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import Summary from "../components/Summary/Summary";
 import Items from "../components/Items/Items";
 
 const Home = props =>
                <div>
-                   <Navbar />
                    <div>
                         <p> <br/> </p>
                    </div>
