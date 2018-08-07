@@ -4,7 +4,7 @@ import "./Navbar.css"
 
 const Navbar = props =>
    <div>
-            <nav className="navbar navbar-dark bg-success">
+            <nav className="navbar navbar-dark">
                 <div className="info-section">
                     <a href="/home" style={{ textDecoration: 'none' }}><h1 className="logo">EquipRENT</h1></a>
                 </div>
