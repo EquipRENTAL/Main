@@ -3,6 +3,7 @@ import { Parallax} from 'react-parallax';
 import Footer from "../components/Footer/Footer";
 import Summary from "../components/Summary/Summary";
 import Items from "../components/Items/Items";
+import Items2 from "../components/Items/Items2";
 
 const Home = props =>
                <div>
@@ -48,6 +49,10 @@ const Home = props =>
                         <a href="/categories" style={{ textDecoration: 'none' }}><h3> Browse Items </h3> </a>
                         </div>
                    <Items />
+                        <div>
+                        <a href="/post" style={{ textDecoration: 'none' }}><h3> Post your Item! </h3> </a>
+                        </div>
+                   <Items2 />
                    <Parallax
                        blur={0}
                        bgImage={require('../imgs/nightCamping.jpg')}
