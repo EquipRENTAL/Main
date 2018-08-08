@@ -3,8 +3,16 @@ const Items = require("../models/itemsSchema");
 // Defining methods for the itemsController
 module.exports = {
   findAll: function(req, res) {
+    let query = {};
+
+    if (req.params.category) {
+      query = {
+        category: req.params.category,
+      };
+    }
+    
     Items
-      .find(req.query)
+      .find(query)
       .sort({ date: -1 })
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));

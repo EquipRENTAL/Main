@@ -18,9 +18,7 @@ class Page extends Component {
 
 
     loadItems() {
-        console.log('this is the categyr', this.props.match.params.category)
-        const category = this.props.match.params.category;
-        API.getItems(category)
+        API.getItems()
             .then(res =>
                 this.setState({ items: res.data })
             )
@@ -35,9 +33,8 @@ class Page extends Component {
     
     <div>
 
-
         <div className="container">
-            <h3> {this.props.match.params.category} </h3>
+            <h1> Camping </h1>
             <div>
                 <Card data={this.state.items} />
             </div>
@@ -49,4 +46,4 @@ class Page extends Component {
         )}
 }
 
-export default Page;
+export default CampingItem;

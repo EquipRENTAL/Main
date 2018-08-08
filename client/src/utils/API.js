@@ -2,8 +2,8 @@ import axios from "axios";
 
 export default {
   // Gets all books
-  getItems: function() {
-    return axios.get("http://localhost:3001/api/");
+  getItems: function(category) {
+    return axios.get("http://localhost:3001/api/by-category/" + category);
   },
   // Gets the book with the given id
   getOne: function(id) {
