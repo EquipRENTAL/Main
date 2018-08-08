@@ -25,7 +25,7 @@ require('./config/passport')(passport); // pass passport for configuration
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 // enable cors
-app.use(cors());
+app.use(cors({ origin: "http://localhost:3000" })); // whitelist the front end?
 // Enable CORS from client-side
 app.use(function(req, res, next) {  
   res.header("Access-Control-Allow-Origin", "*");
@@ -57,6 +57,17 @@ app.post('/login', passport.authenticate('local-login', {
   failureRedirect : 'http://localhost:3000/login', // redirect back to the signup page if there is an error
   failureFlash : true // allow flash messages
 }));
+
+// LOGOUT ==============================
+// AXIOS THIS??
+app.get('/api/logout', function(req, res) {
+  req.logout();
+  res.redirect('/api/checklogout');
+});
+
+app.get('/api/checklogout', function(req, res) {
+  res.send("logout successful!");
+})
 
 
 // Serve up static assets (usually on heroku)

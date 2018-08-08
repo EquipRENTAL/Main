@@ -17,7 +17,7 @@ class Login extends Component {
         return (
             <div className="container">
                 <div className="col">
-                    <h1><span className="fa fa-sign-in"></span> Login</h1>
+                    <p className="text-center"><span className="fa fa-sign-in"></span> Login</p>
 
 
 

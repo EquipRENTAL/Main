@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Cardtemplate.css"
+//import "./Cardtemplate.css"
 
 const Cardtemplate = props => (
     <li className = 'Cardtemplate'>
