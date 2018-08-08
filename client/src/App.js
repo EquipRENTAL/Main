@@ -58,6 +58,7 @@ class App extends Component {
                         
                         
                         <Route exact path="/categories" component={Categories} />
+                        <Route exact path="/items/:category" component={Page} />
                         <Route exact path="/tent" component={Tent} />  
                         {/* <Route exact path="/Confirmation" component={Confirmation} /> */}
                         <Route exact path="/account" component={Account} />
