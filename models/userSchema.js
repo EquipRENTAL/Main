@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 const bcrypt = require('bcrypt-nodejs');
 
 // change userschema to include:
-// phone, username, zipcode
+// phone, username, zipcode, date 
 
 const userSchema = new Schema({
   local: {
@@ -15,6 +15,23 @@ const userSchema = new Schema({
     token: String,
     email: String,
     name: String
+  },
+  username: {
+    type: String,
+    required: true,
+    unique: true,
+  },
+  phone: {
+    type: Number,
+    unique: true
+  },
+  zip: {
+    type: Number,
+    required: true
+  },
+  date: {
+    type: Date, 
+    default: Date.now
   }
 
 });
