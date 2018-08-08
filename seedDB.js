@@ -244,8 +244,8 @@ const items = [
     user: "Jay G.", 
     category: "Tools",
     title: "Dutch Oven",
-    description: "Yeah, there is such a thing as a dutch oven for real. This cast iron setup is great for cooking outdoors when camping!",
-    image: "https://raw.githubusercontent.com/EquipRENTAL/Main/master/client/src/imgs/dutchOven.jpg",
+    description: "Yeah, there is such a thing as a dutch oven for real. It's not just something your significant other does to annoy you. This cast iron setup is great for cooking outdoors when camping!",
+    image: "https://raw.githubusercontent.com/EquipRENTAL/Main/master/client/src/imgs/dutchOvenSet.jpg",
   },
   {
     user: "Michael R.", 
@@ -288,13 +288,6 @@ const items = [
     title: "Grill",
     description: "Ideal grill to use over an open flame.",
     image: "https://raw.githubusercontent.com/EquipRENTAL/Main/master/client/src/imgs/portableFiregrill.jpg",
-  },
-  {
-    user: "Michael", 
-    category: "camping", 
-    title: "Tent", 
-    description: "My tent is cool", 
-    image: "https://raw.githubusercontent.com/EquipRENTAL/Main/master/client/src/imgs/floatingTent.jpeg"
   }
 ];
 // code redundant
