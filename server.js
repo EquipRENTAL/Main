@@ -25,7 +25,7 @@ require('./config/passport')(passport); // pass passport for configuration
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 // enable cors
-app.use(cors({ origin: "http://localhost:3000" })); // whitelist the front end?
+app.use(cors()); // whitelist the front end?
 // Enable CORS from client-side
 app.use(function(req, res, next) {  
   res.header("Access-Control-Allow-Origin", "*");
