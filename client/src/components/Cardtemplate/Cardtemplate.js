@@ -21,7 +21,7 @@ const Cardtemplate = props => (
 			<h6>{props.title}</h6>
     		</p>
             <p className="card-description"><strong>Description</strong>: {props.description}
-            <br /><strong>Owner</strong>: {props.user}</p>
+            <br /><strong>Owner</strong>: <a href="mailto:equiprentcenter@gmail.com&subject=I'm Interested In This Item&body=">{props.user}</a></p>
         </div>
       </div>
     );
