@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom"; 
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"; 
 import Categories from "./pages/Categories";
 import About from "./pages/About";
 import Home from "./pages/Home";
@@ -36,27 +36,10 @@ class App extends Component {
 
     render() {
         return (
-        //   <div>
-        //     {/* <NavTabs */}
-        //       currentPage={this.state.currentPage}
-        //       handlePageChange={this.handlePageChange}
-        //     />
-        //     {this.renderPage()}
-        //   </div>
-    
-        <div>
-                <Navbar/>
-                <Router>
-                    <div>
-    
-                        {/* <Route exact path="/:categoryName" component={Categories} /> */}
-
-                        
-    
-                        
-                        
-                        
-                        
+            <Router>
+                <div>
+                    <Navbar/>
+                    <Switch>   
                         <Route exact path="/categories" component={Categories} />
                         <Route exact path="/items/:category" component={Page} />
                         <Route exact path="/tent" component={Tent} />  
@@ -66,18 +49,15 @@ class App extends Component {
                         <Route exact path="/about" component={About} /> 
                         <Route exact path="/login" component={Login} /> 
                         <Route exact path="/page" component={Page} />
-			            <Route exact path="/signup" component={Signup} />  
+                        <Route exact path="/signup" component={Signup} />  
                         <Route exact path="/chat" component={Chat} />
                         <Route exact path="/" component={Home} />  
-                        <Route exact path="/home" component={Home} /> 
-                          
-                           
-    
-    
-                    </div>
-                </Router>
+                        <Route exact path="/home" component={Home} />
+                    </Switch> 
                 </div>
-        )}
+            </Router>
+        )
+    }
 }
 
 export default App;

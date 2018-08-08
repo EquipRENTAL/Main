@@ -32,7 +32,7 @@ class Signup extends Component {
         return (
             <div className="container">
                 <div className="col">
-                    <h1><span className="fa fa-sign-in"></span> Signup</h1>
+                    <p className="text-center" ><span className="fa fa-sign-in"></span> Signup</p>
     
                     
                         {/* if (message.length > 0) {
@@ -40,7 +40,7 @@ class Signup extends Component {
                         } */}
                     
     
-                    {/* SIGNUP form */}
+                    {/* SIGNUP form NEED TO CHANGE LOCALHOST */}
                     <form action="http://localhost:3001/signup" method="post">
                         
                         <div className="form-group">

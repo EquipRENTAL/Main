@@ -17,10 +17,8 @@ class Login extends Component {
         return (
             <div className="logincontainer">
                 <div className="col">
-                    <h3><span className="fa fa-sign-in"></span> Login</h3>
-
-
-
+                    <p className="text-center"><span className="fa fa-sign-in"></span> Login</p>
+          
                     {/* <!-- LOGIN FORM --> */}
                     <form action="http://localhost:3001/login" method="post">
                         <div className="form-group">
