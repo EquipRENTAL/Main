@@ -60,12 +60,12 @@ app.post('/login', passport.authenticate('local-login', {
 
 // LOGOUT ==============================
 // AXIOS THIS??
-app.get('/api/logout', function(req, res) {
+app.get('/logout', function(req, res) {
   req.logout();
-  res.redirect('/api/checklogout');
+  res.redirect('/checklogout');
 });
 
-app.get('/api/checklogout', function(req, res) {
+app.get('/checklogout', function(req, res) {
   res.send("logout successful!");
 })
 
