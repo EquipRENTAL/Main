@@ -30,29 +30,31 @@ pSum {
 }
 
 #imagesMain {
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
   text-align: center;
 }
 #imagesMain img {
   height: 350px;
   width: 350px;
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
   vertical-align: middle;
+  border-radius: 20px;
 }
 
 #imagesMain2 {
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
   text-align: center;
 }
 #imagesMain2 img {
+  padding: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
   height: 400px;
   width: 400px;
   vertical-align: middle;
+  border-radius: 20px;
 }
 
 section {

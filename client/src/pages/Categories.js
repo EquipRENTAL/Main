@@ -45,7 +45,7 @@ class Categories extends Component {
                        strength={200}
                        >
                        <div>
-                       <a href="/items/Camping" style={{ textDecoration: 'none' }}><h2> Camping </h2> </a>
+                       <a href="/items/Camping" style={{ textDecoration: 'none' }}><h4> Camping </h4> </a>
                        </div>                      
                        <div style={{ height: '550px' }}/>
                      </Parallax>
@@ -61,7 +61,7 @@ class Categories extends Component {
                        strength={200}
                        >        
                         <div>
-                        <a href="/items/Sporting" style={{ textDecoration: 'none' }}><h2> Outdoor Sporting Goods </h2> </a>
+                        <a href="/items/Sporting" style={{ textDecoration: 'none' }}><h4> Outdoor Sporting Goods </h4> </a>
                         </div>              
                        <div style={{ height: '550px' }} />
                      </Parallax>
@@ -77,7 +77,7 @@ class Categories extends Component {
                        strength={200}
                        >                
                         <div>
-                        <a href="/items/Nautical" style={{ textDecoration: 'none' }}><h2> Nautical </h2> </a>
+                        <a href="/items/Nautical" style={{ textDecoration: 'none' }}><h4> Nautical </h4> </a>
                         </div>      
                        <div style={{ height: '550px' }} />
                      </Parallax>
@@ -94,7 +94,7 @@ class Categories extends Component {
                        strength={200}
                        >     
                         <div>
-                        <a href="/items/Tools" style={{ textDecoration: 'none' }}><h2> Tools </h2> </a>
+                        <a href="/items/Tools" style={{ textDecoration: 'none' }}><h4> Tools </h4> </a>
                         </div>                 
                        <div style={{ height: '550px' }} />
                      </Parallax>

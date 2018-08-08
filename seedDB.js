@@ -131,7 +131,7 @@ const items = [
   {
     user: "Michael R.", 
     category: "Sporting",
-    title: "Franklin Ladderball Setup",
+    title: "Franklin Ladderball",
     description: "Fun to play, easy to assemble, and lightweight to boot.",
     image: "https://raw.githubusercontent.com/EquipRENTAL/Main/master/client/src/imgs/ladderball2.jpg",
   },
@@ -244,7 +244,7 @@ const items = [
     user: "Jay G.", 
     category: "Tools",
     title: "Dutch Oven",
-    description: "Yeah, there is such a thing as a dutch oven for real. It's not just something your significant other does to annoy you. This cast iron setup is great for cooking outdoors when camping!",
+    description: "It's not the dutch oven your S.O. does to you. This cast iron dutch oven setup is great for cooking outdoors when camping!",
     image: "https://raw.githubusercontent.com/EquipRENTAL/Main/master/client/src/imgs/dutchOvenSet.jpg",
   },
   {
@@ -255,16 +255,9 @@ const items = [
     image: "https://raw.githubusercontent.com/EquipRENTAL/Main/master/client/src/imgs/hikingSticks.jpg",
   },
   {
-    user: "Jessica S.", 
-    category: "Tools",
-    title: "Cords",
-    description: "I have extra stand cords. Brand new. For sale!",
-    image: "https://raw.githubusercontent.com/EquipRENTAL/Main/master/client/src/imgs/standCords.jpg",
-  },
-  {
     user: "Ron D.", 
     category: "Tools",
-    title: "Portable Charcoal Grill",
+    title: "Charcoal Grill",
     description: "Easy to transport and clean up. Great for camping and hiking.",
     image: "https://raw.githubusercontent.com/EquipRENTAL/Main/master/client/src/imgs/portableCharcoalgrill.jpg",
   },
