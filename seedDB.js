@@ -9,8 +9,6 @@ mongoose.connect(
 
 // not necessary to add a date key, it will be made automatically when adding it to the db :)
 const items = [
-
-db.items.insertMany([
   {
     user: "Jay G.", 
     category: "Camping",
@@ -298,8 +296,6 @@ db.items.insertMany([
     description: "My tent is cool", 
     image: "https://raw.githubusercontent.com/EquipRENTAL/Main/master/client/src/imgs/floatingTent.jpeg"
   }
-])
-
 ];
 // code redundant
 // db.items.insertMany([
