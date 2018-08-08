@@ -56,10 +56,10 @@ class Post extends Component {
     render() {
         return (
             <div>
-                <div className="container">
+                <div className="postcontainer">
                     <form>
-                        <h1>{this.state.message}</h1>
                         <h3>Post your item!</h3>
+                        {/* <h1>{this.state.message}</h1> */}
                         <label htmlFor="defaultFormRegisterNameEx" className="grey-text">Name your item</label>
 
                         <input
