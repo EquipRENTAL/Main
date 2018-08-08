@@ -31,7 +31,7 @@ app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header('Access-Control-Allow-Methods', 'PUT, GET, POST, DELETE, OPTIONS');
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization, Access-Control-Allow-Credentials");
-  res.header("Access-Control-Allow-Credentials", "true");l
+  res.header("Access-Control-Allow-Credentials", "true");
   next();
 });
 
@@ -64,13 +64,13 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
-app.get('/TESTTHIS/', (req, res) => {
-  res.send('hello world');
-});
+// app.get('/TESTTHIS/', (req, res) => {
+//   res.send('hello world');
+// });
 
 // Start the API server
 const server = app.listen(PORT, function() {
-  console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
+  console.log(`==> API Server now listening on PORT ${PORT}!`);
 });
 
 const io = socket(server);
