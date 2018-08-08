@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import Navbar from "../components/Navbar/Navbar"
 import API from "../utils/API";
 import Card from "../components/Card/Card"
 
@@ -37,7 +35,7 @@ class Page extends Component {
 
 
         <div className="container">
-            <h3> {this.props.match.params.category} </h3>
+            {/* <h3> {this.props.match.params.category} </h3> */}
             <div>
                 <Card data={this.state.items} />
             </div>

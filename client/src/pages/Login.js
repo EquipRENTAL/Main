@@ -15,12 +15,10 @@ class Login extends Component {
 
     render() {
         return (
-            <div className="container">
+            <div className="logincontainer">
                 <div className="col">
                     <p className="text-center"><span className="fa fa-sign-in"></span> Login</p>
-
-
-
+          
                     {/* <!-- LOGIN FORM --> */}
                     <form action="http://localhost:3001/login" method="post">
                         <div className="form-group">
@@ -49,7 +47,7 @@ class Login extends Component {
                         </div>
                     </form>
 
-                    <hr />
+                    {/* <hr />
 
                     <p>Need an account? <a href="/signup">Signup</a></p>
                     <p>Or go <a href="/">home</a>.</p>
@@ -57,7 +55,7 @@ class Login extends Component {
                         <div className="text-center">
                             <p>A demo by <a href="http://scotch.io">Scotch</a>.</p>
                             <p>Visit the <a href="http://scotch.io/tutorials/javascript/easy-node-authentication-setup-and-local">tutorial</a>.</p>
-                        </div>
+                        </div> */}
 
                 </div>
             </div>
