@@ -3,7 +3,11 @@ import React, { Component } from "react";
 class Signup extends Component {
     state = {
         email: '',
-        password: ''
+        password: '',
+        verify: '',
+        username: '',
+        phone: '',
+        zip: ''
     };
 
     handleInputChange = event => {
@@ -11,6 +15,7 @@ class Signup extends Component {
         this.setState({
           [name]: value
         });
+        //console.log("this is being set in state" ,this.state);
     };
 
     /* handleFormSubmit = e => {;
@@ -56,6 +61,39 @@ class Signup extends Component {
                                 className="form-control" 
                                 name="password"
                                 value={this.state.password}
+                                onChange={this.handleInputChange} 
+                            />
+                        </div>
+
+                        <div className="form-group">
+                            <label>Username</label>
+                            <input 
+                                type="username" 
+                                className="form-control" 
+                                name="username"
+                                value={this.state.username}
+                                onChange={this.handleInputChange} 
+                            />
+                        </div>
+
+                        <div className="form-group">
+                            <label>Phone Number</label>
+                            <input 
+                                type="phone" 
+                                className="form-control" 
+                                name="phone"
+                                value={this.state.phone}
+                                onChange={this.handleInputChange} 
+                            />
+                        </div>
+
+                        <div className="form-group">
+                            <label>Zip Code</label>
+                            <input 
+                                type="zip" 
+                                className="form-control" 
+                                name="zip"
+                                value={this.state.zip}
                                 onChange={this.handleInputChange} 
                             />
                         </div>
