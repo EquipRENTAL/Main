@@ -30,7 +30,7 @@ class Categories extends Component {
         console.log("Categories state", this.state)
         return (
             <div>
-                {/* <h1>CategoryName: {this.props.params.categoryName}</h1> */}
+             
 
 
                 <div>           
@@ -45,7 +45,7 @@ class Categories extends Component {
                        strength={200}
                        >
                        <div>
-                       <a href="/camping" style={{ textDecoration: 'none' }}><h2> Camping </h2> </a>
+                       <a href="/items/Camping" style={{ textDecoration: 'none' }}><h2> Camping </h2> </a>
                        </div>                      
                        <div style={{ height: '550px' }}/>
                      </Parallax>
@@ -61,7 +61,7 @@ class Categories extends Component {
                        strength={200}
                        >        
                         <div>
-                        <a href="/sporting" style={{ textDecoration: 'none' }}><h2> Outdoor Sporting Goods </h2> </a>
+                        <a href="/items/Sporting" style={{ textDecoration: 'none' }}><h2> Outdoor Sporting Goods </h2> </a>
                         </div>              
                        <div style={{ height: '550px' }} />
                      </Parallax>
@@ -77,7 +77,7 @@ class Categories extends Component {
                        strength={200}
                        >                
                         <div>
-                        <a href="/water" style={{ textDecoration: 'none' }}><h2> Nautical </h2> </a>
+                        <a href="/items/Nautical" style={{ textDecoration: 'none' }}><h2> Nautical </h2> </a>
                         </div>      
                        <div style={{ height: '550px' }} />
                      </Parallax>
@@ -94,7 +94,7 @@ class Categories extends Component {
                        strength={200}
                        >     
                         <div>
-                        <a href="/tools" style={{ textDecoration: 'none' }}><h2> Tools </h2> </a>
+                        <a href="/items/Tools" style={{ textDecoration: 'none' }}><h2> Tools </h2> </a>
                         </div>                 
                        <div style={{ height: '550px' }} />
                      </Parallax>
