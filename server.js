@@ -86,11 +86,11 @@ app.get('/checklogout', function(req, res) {// thanks to es6 i could literally s
   `);
 })
 
-app.get('/api/account', isLoggedIn, function(req, res) {
+app.get('/account', isLoggedIn, function(req, res) {
   // res.render('profile.ejs', {
   //     user : req.user
   // });
-  res.redirect('/account');
+  res.redirect('/accountUser');
 });
 
 
