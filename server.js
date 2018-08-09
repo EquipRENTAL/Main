@@ -3,10 +3,9 @@ const app = express();
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const routes = require("./routes/routes");
-const passRoutes = require("./routes/passRoutes");
+//const passRoutes = require("./routes/passRoutes");
 const cors = require("cors");
 const passport = require("passport");
-// const LocalStrategy = require('passport-local').Strategy;
 const flash = require("connect-flash");
 const morgan = require("morgan");
 const cookieParser = require("cookie-parser");
@@ -56,7 +55,8 @@ app.use(flash()); // use connect-flash for flash messages stored in session
 
 // Add routes
 app.use(routes);
-// app.use(passRoutes;
+// app.use(passRoutes);
+
 // process the signup form
 // the following post routes are triggered by form actions
 app.post('/api/signup', passport.authenticate('local-signup', {
@@ -90,7 +90,8 @@ app.get('/account', isLoggedIn, function(req, res) {
   // res.render('profile.ejs', {
   //     user : req.user
   // });
-  res.redirect('/accountUser');
+  // res.redirect('/accountUser');
+  console.log("what's going on?")
 });
 
 
