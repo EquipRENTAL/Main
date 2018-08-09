@@ -31,6 +31,7 @@ const userSchema = new Schema({
     type: Date, 
     default: Date.now
   },
+  // push item objects to user data, if they have any.
   items: [
     {
       type: Schema.Types.ObjectId,

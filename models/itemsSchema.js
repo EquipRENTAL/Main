@@ -3,11 +3,12 @@ const Schema = mongoose.Schema;
 
 const itemSchema = new Schema({
   // user is supposed to be an object id
-  user: { 
+  /* user: { 
       type: Schema.Types.ObjectId,
       ref: "User"
-  },
-  category: {type: String, required: true, unique: false },
+  }, */
+  user: {type: String, required: true, unique: false},
+  category: {type: String, required: true, unique: false},
   title: {type: String, required: true, unique: false},
   description: { type: String, unique:false },
   image: { type: String, required: true, unique:false},
