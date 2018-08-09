@@ -41,13 +41,14 @@ class Account extends Component {
     render() {
         return (
             <div className="container text-center">
-                <div className="col">
-                    <div className="row">
+                <div className="row">
+                    <div className="col">
                         <p className="text-center"> My account </p>
                         <p><a href="/logout">Log Out?</a></p>
                     </div>
-                    
-                    <div className="row">
+                </div>
+                <div className="row">
+                    <div className="col">
                         <p><a href='/account/edit'>Edit?</a></p>
                         {/* account information here  */}
                         <p>username: {this.username}</p>
@@ -55,8 +56,9 @@ class Account extends Component {
                         <p>phone: {this.phone}</p>
                         <p>zip: {this.zip}</p>
                     </div>
-
-                    <div className="row">
+                </div>
+                <div className="row">
+                    <div className="col">
                         <p>Posts</p>
                         {this.state.items.map(item => {
                             return(
@@ -65,10 +67,6 @@ class Account extends Component {
                         })}
                     </div>
                 </div>
-                
-
-            
-
             </div>
         )
     }
