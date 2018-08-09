@@ -60,6 +60,8 @@ app.post('/api/login', passport.authenticate('local-login', {
 }));
 
 // LOGOUT ==============================
+// for some reason this route only works as /logout
+// when routed as /api/logout heroku gave an error *shrug*
 app.get('/logout', function(req, res) {
   req.logout();
   res.redirect('/checklogout');

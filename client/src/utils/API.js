@@ -3,22 +3,22 @@ import axios from "axios";
 export default {
   // Gets all items
   getItems: function(category) {
-    return axios.get("http://localhost:3001/api/by-category/" + category);
+    return axios.get("/api/by-category/" + category);
   },
   // Gets the item with the given id
   getOne: function(id) {
-    return axios.get("http://localhost:3001/api/" + id);
+    return axios.get("/api/" + id);
   },
   // Deletes the item with the given id
   deleteItems: function(id) {
-    return axios.delete("http://localhost:3001/api/" + id);
+    return axios.delete("/api/" + id);
   },
   // Saves a item to the database
   saveItems: function(bookData) {
-    return axios.post("http://localhost:3001/api/", bookData);
+    return axios.post("/api/", bookData);
   },
   getUserData: function(id) {
-    return axios.get("http://localhost:3001/api/users/" + id);
+    return axios.get("/api/users/" + id);
   }
   /* loginPassport: function () {
     console.log("this is a login function");
