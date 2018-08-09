@@ -5,7 +5,7 @@ import API from "../utils/API";
 class Post extends Component {
 
     state = {
-        user: "hello",
+        user: "",
         itemName: "",
         category: "",
         description: "",
@@ -61,7 +61,6 @@ class Post extends Component {
                         <h3>Post your Item!</h3>
                         {/* <h1>{this.state.message}</h1> */}
                         <label htmlFor="defaultFormRegisterNameEx" className="grey-text">Name your item</label>
-
                         <input
                             type="text"
                             id="defaultFormRegisterNameEx"
@@ -71,6 +70,18 @@ class Post extends Component {
                             onChange={this.handleInputChange}
                         />
                         <br />
+
+                        <label htmlFor="defaultFormRegisterNameEx" className="grey-text">Username</label>
+                        <input
+                            type="text"
+                            id="defaultFormRegisterNameEx"
+                            name="user"
+                            className="form-control"
+                            value={this.state.user}
+                            onChange={this.handleInputChange}
+                        />
+                        <br />
+                        
                         <div className="form-group">
                             <label for="exampleFormControlSelect1">Category of your item</label>
                             <select
@@ -103,9 +114,7 @@ class Post extends Component {
                         </div>
                         <br />
                         <div className="form-group">
-                            <label for="exampleFormControlFile1">Attach a photo of your item
-                    </label>
-
+                            <label for="exampleFormControlFile1">Attach a photo URL of your item </label>
                             <input
                                 type="text"
                                 className="form-control-file" id="exampleFormControlFile1"
