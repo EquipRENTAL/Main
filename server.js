@@ -70,8 +70,8 @@ app.get('/logout', function(req, res) {
 app.get('/checklogout', function(req, res) {
   res.send("logout successful!");
   setTimeout(() => {
-    res.redirect("/")
-  }, 200);
+    res.redirect("/home")
+  }, 2000);
 })
 
 
