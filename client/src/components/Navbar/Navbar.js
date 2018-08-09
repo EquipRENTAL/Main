@@ -17,7 +17,7 @@ const Navbar = props =>
                     <a href="/login" style={{ textDecoration: 'none' }} className="navLinks"><p>Login/Create User</p></a>
                 </div>
                 <div className="account">
-                    <a href="/account" style={{ textDecoration: 'none' }} className="navLinks"><p>My Account</p></a>
+                    <a href="/api/account" style={{ textDecoration: 'none' }} className="navLinks"><p>My Account</p></a>
                 </div>
             </nav>
         </div>
