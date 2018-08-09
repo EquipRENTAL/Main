@@ -16,6 +16,8 @@ class Navbar extends Component {
     componentDidMount () {
         console.log("Navbar mounted");
     }
+    
+    // <Link /> does not link to the backend...
 
     render() {
         return(
@@ -28,13 +30,13 @@ class Navbar extends Component {
                         <Link style={{ textDecoration: 'none' }} className="navLinks" to="/categories">Browse</Link>
                     </div>
                     <div className="post">
-                        <Link style={{ textDecoration: 'none' }} className="navLinks" to="/post">Post Item</Link>
+                        <Link style={{ textDecoration: 'none' }} className="navLinks" to="/post">Post</Link>
                     </div>
                     <div className="login">
                         <Link style={{ textDecoration: 'none' }} className="navLinks" to="/login">Login/Create User</Link>
                     </div>
                     <div className="account">
-                        <Link style={{ textDecoration: 'none' }} className="navLinks" to="/account">My Account</Link>
+                    <a href="/account" style={{ textDecoration: 'none' }} className="navLinks"><p>My Account</p></a> 
                     </div>
                 </nav>
             </div>

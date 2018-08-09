@@ -14,7 +14,7 @@ class Account extends Component {
         password: '',
         phone: '',
         zip: '',
-        items: []
+        items: []// might need to just give this dummy data....
     }
 
     handleInputChange = event => {
