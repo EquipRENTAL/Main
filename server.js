@@ -90,7 +90,8 @@ app.get('/account', isLoggedIn, function(req, res) {
   // res.render('profile.ejs', {
   //     user : req.user
   // });
-  // res.redirect('/accountUser');
+  
+  res.redirect('/accountUser');
   console.log("what's going on?")
 });
 
