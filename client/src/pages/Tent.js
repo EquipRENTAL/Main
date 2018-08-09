@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Navbar from "../components/Navbar/Navbar"
+/* import { Link } from "react-router-dom";
+import Navbar from "../components/Navbar/Navbar" */
 
 const Tent = props =>
 

@@ -30,7 +30,7 @@ class Signup extends Component {
 
     render() {
         return (
-            <div className="container">
+            <div className="logincontainer">
                 <div className="col">
                     <p className="text-center" ><span className="fa fa-sign-in"></span> Signup</p>
     

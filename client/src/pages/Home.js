@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React/* , { Component } */ from "react";
 import { Parallax} from 'react-parallax';
 import Footer from "../components/Footer/Footer";
 import Summary from "../components/Summary/Summary";

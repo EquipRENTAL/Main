@@ -5,7 +5,7 @@ import io from "socket.io-client";
 
 
 // class App extends Component
-class Chat extends React.Component {
+class Chat extends Component {
     constructor(props) {
         super(props);
 
