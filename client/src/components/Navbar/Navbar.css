@@ -46,15 +46,16 @@ grid-column: 2;
 }
 
 .post {
-grid-column: 4;
+grid-column: 3;
+font-size: 20px !important;
 }
 
 .account {
- grid-column: 5;
+ grid-column: 4;
 }
 
 .login {
-grid-column: 6;
+grid-column: 5;
 }
 
 .navLinks {

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom"; 
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";  
 import Categories from "./pages/Categories";
 import About from "./pages/About";
 import Home from "./pages/Home";
@@ -12,6 +12,7 @@ import Page from "./pages/Page";
 import Chat from "./components/Chat/Chat";
 import Signup from "./pages/Signup";
 import Navbar from "./components/Navbar/Navbar";
+import history from "./utils/history"
 import './App.css';
 
 // user data needs to be passed from the backend to here
@@ -35,7 +36,7 @@ class App extends Component {
 
     render() {
         return (
-            <Router>
+            <Router history={history}>
                 <div>
                     <Navbar/>
                     <Switch>   

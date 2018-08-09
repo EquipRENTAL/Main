@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import Navbar from "../components/Navbar/Navbar"
+/* import { Link } from "react-router-dom";
+import Navbar from "../components/Navbar/Navbar" */
 import API from "../utils/API";
 import Card from "../components/Card/Card"
 

@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const itemSchema = new Schema({
+  // user is supposed to be an object id
   user: { 
       type: Schema.Types.ObjectId,
       ref: "User"
