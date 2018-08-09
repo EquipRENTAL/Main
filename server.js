@@ -54,8 +54,8 @@ app.post('/api/signup', passport.authenticate('local-signup', {
 }));
 
 app.post('/api/login', passport.authenticate('local-login', {
-  successRedirect : 'http://localhost:3000/', // redirect to the secure profile section
-  failureRedirect : 'http://localhost:3000/login', // redirect back to the signup page if there is an error
+  successRedirect : '/', // redirect to the secure profile section
+  failureRedirect : '/login', // redirect back to the signup page if there is an error
   failureFlash : true // allow flash messages
 }));
 
