@@ -1,5 +1,6 @@
 // will activate post routes route via an action
 // i.e. <form action = '/login' />
+// probably won't be using this file for routes
 module.exports = function(app, passport) {
     // TO DO:
     // MOVE ANY "GET" ROUTES TO THE FRONT END

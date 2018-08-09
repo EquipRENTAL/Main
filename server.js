@@ -46,21 +46,21 @@ app.use(flash()); // use connect-flash for flash messages stored in session
 app.use(routes);
 // app.use(passRoutes;
 // process the signup form
-app.post('/signup', passport.authenticate('local-signup', {
-  successRedirect : 'http://localhost:3000/login', // redirect to the secure profile section
-  failureRedirect : 'http://localhost:3000/signup', // redirect back to the signup page if there is an error
+// the following post routes are triggered by form actions
+app.post('/api/signup', passport.authenticate('local-signup', {
+  successRedirect : '/login', // redirect to the secure profile section
+  failureRedirect : '/signup', // redirect back to the signup page if there is an error
   failureFlash : "something went wrong" // allow flash messages
 }));
 
-app.post('/login', passport.authenticate('local-login', {
+app.post('/api/login', passport.authenticate('local-login', {
   successRedirect : 'http://localhost:3000/', // redirect to the secure profile section
   failureRedirect : 'http://localhost:3000/login', // redirect back to the signup page if there is an error
   failureFlash : true // allow flash messages
 }));
 
 // LOGOUT ==============================
-// AXIOS THIS??
-app.get('/logout', function(req, res) {
+app.get('/api/logout', function(req, res) {
   req.logout();
   res.redirect('/checklogout');
 });

@@ -41,7 +41,7 @@ class Signup extends Component {
                     
     
                     {/* SIGNUP form NEED TO CHANGE LOCALHOST */}
-                    <form action="http://localhost:3001/signup" method="post">
+                    <form action="/api/signup" method="post">
                         
                         <div className="form-group">
                             <label>Email</label>
@@ -106,10 +106,10 @@ class Signup extends Component {
                     <p>Already have an account? <a href="/login">Login</a></p>
                     <p>Or go <a href="/">home</a>.</p>
     
-                    <div className="text-center">
+                    {/* <div className="text-center">
                         <p>A demo by <a href="http://scotch.io">Scotch</a>.</p>
                         <p>Visit the <a href="http://scotch.io/tutorials/javascript/easy-node-authentication-setup-and-local">tutorial</a>.</p>
-                    </div>
+                    </div> */}
     
                 </div>
             </div>
