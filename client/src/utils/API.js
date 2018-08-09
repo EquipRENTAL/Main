@@ -14,32 +14,11 @@ export default {
     return axios.delete("/api/" + id);
   },
   // Saves a item to the database
-  saveItems: function(bookData) {
-    return axios.post("/api/", bookData);
+  saveItems: function(itemData) {
+    return axios.post("/api/", itemData);
   },
   getUserData: function(id) {
     return axios.get("/api/users/" + id);
   }
-  /* loginPassport: function () {
-    console.log("this is a login function");
-    // axios.post('/login');
-  },
-  logoutPasport: function () {
-    console.log("this is a logout function");
-    // the following has to be a get request to the backend
-    // the backend will take care of "logging out"
-    // axios.get('http://locahost:3001/logout')
-
-  },
-  signUpPassport: function (email, password) {
-    console.log("this is a signup function");
-    axios.post('http://localhost:3001/signup' + { email, password } );
-  },
-  connectLocal: function () {
-    // this function is to attach social media accounts to current local account
-    // may not be necessary but will keep just in case.
-    console.log("this is to connect other accounts");
-    // axios.post('http://localhost:3001/connect/local');
-  } */
-
+  // add routes for user data,
 };

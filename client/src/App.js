@@ -14,17 +14,16 @@ import Signup from "./pages/Signup";
 import Navbar from "./components/Navbar/Navbar";
 import './App.css';
 
-// Navbar is in every component, should only be HERE
-// Navbar should link to the given routes in this file
-// When clicking a link, the page should render the component under the navbar
-// basically the same but cleaner.
+// user data needs to be passed from the backend to here
+// user data then needs to be passed to EVERY COMPONENT AS A PROP??
 
 
 class App extends Component {
 
     state = {
         date: new Date(),
-        isLoggedin: null
+        isLoggedin: null,
+        user: ''
     }
 
     handleSelect(date) {

@@ -1,3 +1,4 @@
+// this file is not being used, users are being controlled by passport via config and server js files
 const Users = require("../models/userSchema");
 
 module.exports = {

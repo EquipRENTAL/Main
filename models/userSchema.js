@@ -2,9 +2,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 const bcrypt = require('bcrypt-nodejs');
 
-// change userschema to include:
-// phone, username, zipcode, date 
-
+// item is an array that contains any and all items that a user has posted.
 const userSchema = new Schema({
   local: {
     email: String,
@@ -32,8 +30,13 @@ const userSchema = new Schema({
   date: {
     type: Date, 
     default: Date.now
-  }
-
+  },
+  items: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "Item"
+    }
+  ]
 });
 
 // generating a hash
@@ -47,6 +50,6 @@ userSchema.methods.validPassword = function(password) {
 };
 
 
-const Users = mongoose.model("Users", userSchema);
+const User = mongoose.model("User", userSchema);
 
-module.exports = Users;
+module.exports = User;

@@ -22,6 +22,18 @@ require('./config/passport')(passport); // pass passport for configuration
 // need this for Passport configuration, to connect to mongo DB
 
 // Define middleware here
+// route middleware to make sure a user is logged in
+function isLoggedIn(req, res, next) {
+
+  // if user is authenticated in the session, carry on 
+  if (req.isAuthenticated())
+      console.log("user is loggin in!");
+      return next();
+
+  // if they aren't redirect them to the home page
+  console.log("user is not logged in")
+  res.redirect('/');
+}
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 // enable cors
@@ -67,12 +79,21 @@ app.get('/logout', function(req, res) {
   res.redirect('/checklogout');
 });
 
-app.get('/checklogout', function(req, res) {
+app.get('/checklogout', function(req, res) {// thanks to es6 i could literally send an entire page of html through here... 
   res.send(`
     <p>logout successful!</p>
     <p><a href="/">Click here to go home.</a></p>
   `);
 })
+
+app.get('/account', isLoggedIn, function(req, res) {
+  // res.render('profile.ejs', {
+  //     user : req.user
+  // });
+  res.send({
+    user: req.user
+  })
+});
 
 
 // Serve up static assets (usually on heroku)
