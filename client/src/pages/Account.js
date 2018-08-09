@@ -40,7 +40,7 @@ class Account extends Component {
 
     render() {
         return (
-            <div className="container">
+            <div className="container text-center">
                 <div className="col">
                     <div className="row">
                         <p className="text-center"> My account </p>
@@ -50,10 +50,10 @@ class Account extends Component {
                     <div className="row">
                         <p><a href='/account/edit'>Edit?</a></p>
                         {/* account information here  */}
-                        <p>username: ${this.username}</p>
-                        <p>email: ${this.email}</p>
-                        <p>phone: ${this.phone}</p>
-                        <p>zip: ${this.zip}</p>
+                        <p>username: {this.username}</p>
+                        <p>email: {this.email}</p>
+                        <p>phone: {this.phone}</p>
+                        <p>zip: {this.zip}</p>
                     </div>
 
                     <div className="row">
