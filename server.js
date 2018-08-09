@@ -69,9 +69,13 @@ app.get('/logout', function(req, res) {
 
 app.get('/checklogout', function(req, res) {
   setTimeout(() => {
+    console.log("redirecting...");
     res.redirect("/home")
   }, 2000);
-  res.send("logout successful!");
+  res.send(`
+    <p>logout successful!</p>
+    <p><a href="/">Click here to go home.</a></p>
+  `);
 })
 
 

@@ -23,7 +23,7 @@ class Account extends Component {
             <div className="container">
                 <div className="col">
                     <p className="text-center"> My account </p>
-                    <p><a href="/logout">Log Out?</a>.</p>
+                    <p><a href="/logout">Log Out?</a></p>
                 </div>
 
             </div>
