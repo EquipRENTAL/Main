@@ -61,8 +61,8 @@ const items = [
   {
     user: "Jay G.", 
     category: "Camping",
-    title: "Folding Chair with Cover",
-    description: "Stay cool with this folding chair. Comes with cover, drink holder, and built-in in storage bag with zipper",
+    title: "Folding Chair",
+    description: "Stay cool with this folding chair. Comes with cover, drink holder, and built-in storage bag.",
     image: "https://raw.githubusercontent.com/EquipRENTAL/Main/master/client/src/imgs/foldingChair.jpg",
   },
   {
@@ -244,7 +244,7 @@ const items = [
     user: "Jay G.", 
     category: "Tools",
     title: "Dutch Oven",
-    description: "It's not the dutch oven your S.O. does to you. This cast iron dutch oven setup is great for cooking outdoors when camping!",
+    description: "This cast iron dutch oven setup is great for cooking outdoors when camping!",
     image: "https://raw.githubusercontent.com/EquipRENTAL/Main/master/client/src/imgs/dutchOvenSet.jpg",
   },
   {

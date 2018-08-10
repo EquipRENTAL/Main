@@ -17,7 +17,7 @@ class Login extends Component {
         return (
             <div className="logincontainer">
                 <div className="col">
-                    <p className="text-center"><span className="fa fa-sign-in"></span> Login</p>
+                    <h3 className="text-center"><span className="fa fa-sign-in"></span> Login</h3>
           
                     {/* <!-- LOGIN FORM --> */}
                     <form action="/api/login" method="post">

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import "./Navbar.css"
 
 // i changed this to a component since I need to be able to pass stuff through it.
@@ -24,19 +23,19 @@ class Navbar extends Component {
             <div>
                 <nav className="navbar navbar-dark">
                     <div className="info-section">
-                        <Link style={{ textDecoration: 'none' }} className="logo" to="/home">EquipRENT</Link>
+                        <a href="/home" style={{ textDecoration: 'none' }}><h1 className="logo">EquipRENT</h1></a>
                     </div>
                     <div className="browse">
-                        <Link style={{ textDecoration: 'none' }} className="navLinks" to="/categories">Browse</Link>
+                        <a href="/categories" style={{ textDecoration: 'none' }} className="navLinks"><p>Browse</p></a>
                     </div>
                     <div className="post">
-                        <Link style={{ textDecoration: 'none' }} className="navLinks" to="/post">Post</Link>
+                        <a href="/post" style={{ textDecoration: 'none' }} className="navLinks"><p>Post</p></a>
                     </div>
                     <div className="login">
-                        <Link style={{ textDecoration: 'none' }} className="navLinks" to="/login">Login/Create User</Link>
+                        <a href="/login" style={{ textDecoration: 'none' }} className="navLinks"><p>Login/Create User</p></a>
                     </div>
                     <div className="account">
-                    <a href="/account" style={{ textDecoration: 'none' }} className="navLinks"><p>My Account</p></a> 
+                        <a href="/account" style={{ textDecoration: 'none' }} className="navLinks"><p>My Account</p></a> 
                     </div>
                 </nav>
             </div>

@@ -107,13 +107,13 @@ class Account extends Component {
             <div className="container-fluid">
                 <div className="row">
                     <div className="col text-center">
-                        <p> My account </p>
-                        <p ><a href="/logout">Log Out?</a></p>
+                        <h3> My Account </h3>
+                        <p ><a href="/logout">Log Out</a></p>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col text-center">
-                        <p><a href='/account/edit'>Edit?</a></p>
+                        <p><a href='/account/edit'>Edit</a></p>
                         {/* account information here  */}
                         <p>username: {this.state.username}</p>
                         <p>email: {this.state.email}</p>
