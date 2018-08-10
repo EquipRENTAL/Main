@@ -51,7 +51,7 @@ class Chat extends Component {
 
     render() {
         return (
-            <div className="container">
+            <div className="container-fluid">
                 <div className="row">
                     <div className="col-6">
                         <div className="card">
